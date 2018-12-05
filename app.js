@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
+const port=process.env.PORT || 3000
 
 app.get('/api/soma/:num1/:num2', function (req, res) {
     let num1 = parseFloat(req.params.num1);
@@ -28,6 +29,6 @@ app.get('/api/div/:num1/:num2', function (req, res) {
     res.send(result + "");
 });
 app.use(express.static('./public'));
-app.listen(8000, function () {
-    console.log('Servidor rodando na porta 8000.');
+app.listen(port, function () {
+    console.log('Servidor rodando na porta ' +port+'.');
 });
