@@ -2,6 +2,13 @@
 
 API para fazer o calculo de soma, subtração, multiplicação e divisão;
 
+Para rodar a API
+
+ - npm install
+ - node app
+
+####
+
 - num1 = o número desejado
 - num2 = o número desejado
 
